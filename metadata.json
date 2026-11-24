@@ -1,0 +1,6 @@
+{
+  "name": "구황작물 농원 & 도감",
+  "description": "3D 농사 및 산야초 채집 시뮬레이션과 구황작물 서식지·영양분·효능 도감",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

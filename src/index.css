@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-kr: "Noto Serif KR", Georgia, serif;
+    --font-sans-kr: "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono-data: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans-kr);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif-kr);
+}
+
+.font-data {
+  font-family: var(--font-mono-data);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom thin scrollbar for encyclopedia modal */
+.botanical-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.botanical-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.botanical-scroll::-webkit-scrollbar-thumb {
+  background: rgba(47, 93, 58, 0.24);
+  border-radius: 3px;
+}
+
+.botanical-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(47, 93, 58, 0.42);
+}
